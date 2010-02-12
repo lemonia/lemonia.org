@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 class Randombag
   def initialize(contents)
     @contents = contents
@@ -14,10 +12,10 @@ class Randombag
     @contents -= [ selection ]
     return selection
   end
+
+  def add_one(item)
+	  @contents += [ item ]
+  end
 end
 
-adjectives = Randombag.new(["blue", "green", "flailsome", "feck-shaped"])
 
-while(true)
-  puts adjectives.select_one
-end
