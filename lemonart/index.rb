@@ -3,7 +3,7 @@
 # display an image in a HTML page with its imagemap pulled from exif data user_comment section, eg:
 # user_comment = "coords=\"412,223,403,222,396,220,391,222,387,214,390,201,401,195,406,191,412,198,417,208,416,216\""
 #
-# concept and execution by boli, minced around by 732
+# concept and amateurish execution by boli, minced around by 732
 
 require 'rubygems'
 require 'exifr'
@@ -28,7 +28,7 @@ raise RuntimeError, "Failed to select image from #{image_dir}" if image.nil?
 print cgi.header('Status' => '200 Tangy!',
                  'X-Citric-Acid' => 'C6 H8 O7',
                  'X-E-X-E-X-E-FTang' => image,
-                 'X-lemonart-revision' => "$Revision: 828 $")
+                 'X-lemonart-revision' => "$Revision: 829 $")
 alttext = "lemonia.org"
 coords  = "none"
 pretag  = ""
